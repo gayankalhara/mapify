@@ -1,11 +1,216 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="Widget.Mapify.Toolbar" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
     </style>
+
+
+
+
+    <style name="TextAppearance.Mapify.Display4" parent="@style/TextAppearance.AppCompat.Display4">
+        <item name="android:textSize">@dimen/global_text_size_display_4</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Display3" parent="@style/TextAppearance.AppCompat.Display3">
+        <item name="android:textSize">@dimen/global_text_size_display_3</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Display2" parent="@style/TextAppearance.AppCompat.Display2">
+        <item name="android:textSize">@dimen/global_text_size_display_2</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Display1" parent="@style/TextAppearance.AppCompat.Display1">
+        <item name="android:textSize">@dimen/global_text_size_display_1</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Headline" parent="@style/TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">@dimen/global_text_size_headline</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Title" parent="@style/TextAppearance.AppCompat.Title">
+        <item name="android:textSize">@dimen/global_text_size_title</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Subhead" parent="@style/TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">@dimen/global_text_size_subhead</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Body2" parent="@style/TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">@dimen/global_text_size_body_2</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Body1" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/global_text_size_body_1</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Caption" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/global_text_size_caption</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Button" parent="@style/TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/global_text_size_button</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Menu" parent="@style/TextAppearance.AppCompat.Menu">
+        <item name="android:textSize">@dimen/global_text_size_menu</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Placeholder" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/global_text_size_placeholder</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Display4.Inverse" parent="@style/TextAppearance.Mapify.Display4">
+        <item name="android:textColor">?android:attr/textColorSecondaryInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+        <item name="android:textColorHighlight">?android:attr/textColorHighlightInverse</item>
+        <item name="android:textColorLink">?android:attr/textColorLinkInverse</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Display3.Inverse" parent="@style/TextAppearance.Mapify.Display3">
+        <item name="android:textColor">?android:attr/textColorSecondaryInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+        <item name="android:textColorHighlight">?android:attr/textColorHighlightInverse</item>
+        <item name="android:textColorLink">?android:attr/textColorLinkInverse</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Display2.Inverse" parent="@style/TextAppearance.Mapify.Display2">
+        <item name="android:textColor">?android:attr/textColorSecondaryInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+        <item name="android:textColorHighlight">?android:attr/textColorHighlightInverse</item>
+        <item name="android:textColorLink">?android:attr/textColorLinkInverse</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Display1.Inverse" parent="@style/TextAppearance.Mapify.Display1">
+        <item name="android:textColor">?android:attr/textColorSecondaryInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+        <item name="android:textColorHighlight">?android:attr/textColorHighlightInverse</item>
+        <item name="android:textColorLink">?android:attr/textColorLinkInverse</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Headline.Inverse" parent="@style/TextAppearance.Mapify.Headline">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+        <item name="android:textColorHighlight">?android:attr/textColorHighlightInverse</item>
+        <item name="android:textColorLink">?android:attr/textColorLinkInverse</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Title.Inverse" parent="@style/TextAppearance.Mapify.Title">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+        <item name="android:textColorHighlight">?android:attr/textColorHighlightInverse</item>
+        <item name="android:textColorLink">?android:attr/textColorLinkInverse</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Subhead.Inverse" parent="@style/TextAppearance.Mapify.Subhead">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+        <item name="android:textColorHighlight">?android:attr/textColorHighlightInverse</item>
+        <item name="android:textColorLink">?android:attr/textColorLinkInverse</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Body2.Inverse" parent="@style/TextAppearance.Mapify.Body2">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+        <item name="android:textColorHighlight">?android:attr/textColorHighlightInverse</item>
+        <item name="android:textColorLink">?android:attr/textColorLinkInverse</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Body1.Inverse" parent="@style/TextAppearance.Mapify.Body1">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+        <item name="android:textColorHighlight">?android:attr/textColorHighlightInverse</item>
+        <item name="android:textColorLink">?android:attr/textColorLinkInverse</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Caption.Inverse" parent="@style/TextAppearance.Mapify.Caption">
+        <item name="android:textColor">?android:attr/textColorSecondaryInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+        <item name="android:textColorHighlight">?android:attr/textColorHighlightInverse</item>
+        <item name="android:textColorLink">?android:attr/textColorLinkInverse</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Button.Inverse" parent="@style/TextAppearance.Mapify.Button">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+        <item name="android:textColorHighlight">?android:attr/textColorHighlightInverse</item>
+        <item name="android:textColorLink">?android:attr/textColorLinkInverse</item>
+    </style>
+
+    <style name="TextAppearance.Mapify.Menu.Inverse" parent="@style/TextAppearance.Mapify.Menu">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+        <item name="android:textColorHighlight">?android:attr/textColorHighlightInverse</item>
+        <item name="android:textColorLink">?android:attr/textColorLinkInverse</item>
+    </style>
+
+
+
+    <!-- Theme -->
+    <style name="Theme.Mapify" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowBackground">@color/global_bg_back</item>
+        <item name="actionModeBackground">@color/theme_action_mode_bg</item>
+        <item name="android:navigationBarColor">@color/theme_navigation_bar</item>
+        <item name="android:colorButtonNormal">@color/theme_button_normal</item>
+
+        <item name="colorPrimary">@color/global_color_primary</item>
+        <item name="colorPrimaryDark">@color/global_color_primary_dark</item>
+        <item name="colorAccent">@color/global_color_accent</item>
+        <item name="colorControlNormal">@color/global_color_control_normal</item>
+        <item name="colorControlActivated">@color/global_color_control_activated</item>
+        <item name="colorControlHighlight">@color/global_color_control_highlight</item>
+        <item name="colorSwitchThumbNormal">@color/global_color_switch_thumb_normal</item>
+
+        <item name="android:textColorPrimary">@color/global_text_primary</item>
+        <item name="android:textColorPrimaryInverse">@color/global_text_primary_inverse</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/global_text_primary_disable_only</item>
+        <item name="android:textColorSecondary">@color/global_text_secondary</item>
+        <item name="android:textColorSecondaryInverse">@color/global_text_secondary_inverse</item>
+        <item name="android:textColorTertiary">@color/global_text_tertiary</item>
+        <item name="android:textColorTertiaryInverse">@color/global_text_tertiary_inverse</item>
+        <item name="android:textColorHint">@color/global_text_hint</item>
+        <item name="android:textColorHintInverse">@color/global_text_hint_inverse</item>
+        <item name="android:textColorHighlight">@color/global_text_highlight</item>m>
+        <item name="android:textColorLink">@color/global_text_link</item>
+    </style>
+
+    <style name="Theme.Mapify.TransparentStatusBar" parent="@style/Theme.Mapify">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- blue theme -->
+    <style name="Theme.Mapify.Blue" parent="@style/Theme.Mapify">
+        <item name="colorPrimary">@color/global_color_blue_primary</item>
+        <item name="colorPrimaryDark">@color/global_color_blue_primary_dark</item>
+        <item name="colorAccent">@color/global_color_blue_accent</item>
+        <item name="colorControlActivated">@color/global_color_blue_control_activated</item>
+    </style>
+
+    <style name="Theme.Mapify.TransparentStatusBar.Blue" parent="@style/Theme.Mapify.TransparentStatusBar">
+        <item name="colorPrimary">@color/global_color_blue_primary</item>
+        <item name="colorPrimaryDark">@color/global_color_blue_primary_dark</item>
+        <item name="colorAccent">@color/global_color_blue_accent</item>
+        <item name="colorControlActivated">@color/global_color_blue_control_activated</item>
+    </style>
+
+    <!-- /Theme -->
 
 </resources>
